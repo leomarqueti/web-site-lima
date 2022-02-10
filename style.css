@@ -338,7 +338,13 @@ h1#localizacao {
         width: 96%;
         margin-bottom: -464px;
     }
-
+    .frente {
+        max-width: 285px;
+        margin-left: 65px;
+        margin-top: 29px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #000c025d;
+    }
 }
 
 @media(max-width:375px){

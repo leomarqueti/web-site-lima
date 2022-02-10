@@ -21,12 +21,12 @@
     </header>
 
     <div class="container" id="inicio">
-        <img id="image" srcset="/imagens/fundo-2-414px.jpg 300w,
-        /imagens/fundo-2-414px.jpg 193w,
-        /imagens/fundo-2.jpg 278w"  
-     sizes="(max-width: 414px) 414px,
-            (max-width: 991px) 193px,
-            278px">
+
+        <picture>
+            <source media="(max-width: 415px)" srcset="imagens/fundo-2-414px.jpg">
+            <img id="image" src="imagens/fundo-2.jpg" alt="">
+        </picture>
+       
         <p class="texto">Auto eletrica Lima</p>
         <p class="sub-texto">O melhor para seu automovel!</p>
         <div id="servico" ></div>
