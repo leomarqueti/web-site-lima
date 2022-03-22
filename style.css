@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #498b60;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -83,7 +87,9 @@ button:hover {
 .titulo-servico {
     text-align: center;
     padding: 5px;
-    color: #6FA682;
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -122,7 +128,9 @@ button:hover {
 }
 
 .conteudo {
-    margin-top: 87px;
+    margin: 44px auto;
+    max-width: 763px;
+    width: 100%;
 }
 
 
@@ -130,6 +138,13 @@ button:hover {
     font-family: 'Inter', sans-serif;
     margin-top: 10px;
     margin-left: 18px;
+    color: aliceblue;
+}
+
+.lista-servico {
+    list-style-position: inside;
+    columns: 2;
+    margin-top: 20px;
 }
 
 h1#localizacao {
@@ -138,15 +153,27 @@ h1#localizacao {
     padding: 10px;
 }
 
+.section-imagem-main {
+    text-align: center;
+    background-image: url("imagens/pexels-andrea-piacquadio-3806288.jpg");
+    background-size: cover;
+    height: 368px;
+}
+
+.imagem-main {
+    width: 0px;
+}
+
 .principal {
-    margin: -5px auto -4px auto;
+    margin: -5px auto;
     max-width: 1200px;
-    max-height: 1126px;
+    width: 100%;
+    max-height: 1135px;
     padding: 31px;
     background-color: #252625;
     color: white;
     position: relative;
-    height: 1119px;
+    height: 827px;
 }
 
 div.video {
@@ -166,7 +193,7 @@ div.video > iframe {
 
 .localizacao {
     background-color:#252625 ;
-    color: #6FA682;
+    color: #ffffff;
 }
 
 .frente {
@@ -196,5 +223,104 @@ h3 {
     margin-top: 5px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .titulo-principal {
+        position: absolute;
+        top: -28px;
+        left: -89px;
+        /* width: 100px; */
+    }
+    .texto {
+        font-size: 63px;    
+    }
+    .sub-texto {
+        font-size: 28px;
+        left: 261px;
+        top: 524px;
+    }
+    .imagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
 
+@media only screen and (max-width: 580px) {
+    .texto {
+        font-size: 40px;
+        left: 112px;
+        top: 459px;
+        max-width: 366px;
+    }
+    .sub-texto {
+        font-size: 20px;
+        left: 167px;
+        top: 504px;
+        max-width: 300px;
+    }
+    .conteudo {
+        margin: 59px auto;
+        max-width: 375px;
+        width: 100%;
+    }
+    .p-conteudo{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(37, 38, 37);
+        z-index: 5050;
+        padding: 0px;
+        position: fixed;
+        width: 100%;
+        box-shadow: rgb(0 12 2 / 37%) 5px 5px 10px;
+        flex-direction: column;
+    }
+    .logo {
+        cursor: pointer;
+        max-width: 56px;
+        margin-bottom: 9px;
+        margin-top: 9px;
+    }
+    
+    nav {
+        background-color: #2c2c2c;
+        width: 100%;
+        /* margin: auto; */
+        text-align: center;
+        padding: 3px;
+    }
+    .sub-texto {
+        font-size: 18px;
+        left: 111px;
+        top: 400px;
+        max-width: 302px;
+        text-align: center;
+    }
+    .texto {
+        font-size: 33px;
+        left: 112px;
+        top: 364px;
+        max-width: 327px;
+    }
+    .imagens {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        flex-direction: column;
+    }
+    .frente {
+        max-width: 67%;
+        /* margin-left: 62px; */
+        margin-top: 29px;
+    }
+    .conteudo {
+        margin: 13px auto;
+    }
+}
 
