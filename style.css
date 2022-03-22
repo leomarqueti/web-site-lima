@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #498b60;
+    background-color: #767676;
 }
 
 header {
@@ -166,11 +166,11 @@ h1#localizacao {
 
 .principal {
     margin: -5px auto;
-    max-width: 1200px;
+    max-width: 915px;
     width: 100%;
     max-height: 1135px;
     padding: 31px;
-    background-color: #252625;
+    /* background-color: #252625; */
     color: white;
     position: relative;
     height: 827px;
